@@ -10,6 +10,8 @@ import {
   Route} from "react-router-dom";
 
 export default class App extends Component {
+  pageSize = 20;
+
   render() {
     return (
       <Router>
@@ -17,28 +19,28 @@ export default class App extends Component {
         <NavBar/>
         <Switch>
           <Route exact path="/business">
-          <News key = 'business' pageSize = {10} category = 'business'/>
+          <News key = 'business' pageSize = {this.pageSize} category = 'business'/>
           </Route>
           <Route exact path="/technology">
-          <News key = 'technology' pageSize = {10} category = 'technology'/>
+          <News key = 'technology' pageSize = {this.pageSize} category = 'technology'/>
           </Route>
           <Route exact path="/sports">
-          <News key = 'sports' pageSize = {10} category = 'sports'/>
+          <News key = 'sports' pageSize = {this.pageSize} category = 'sports'/>
           </Route>
           <Route exact path="/general">
-          <News key = 'general' pageSize = {10} category = 'general'/>
+          <News key = 'general' pageSize = {this.pageSize} category = 'general'/>
           </Route>
           <Route exact path="/science">
-          <News key = 'science' pageSize = {10} category = 'science'/>
+          <News key = 'science' pageSize = {this.pageSize} category = 'science'/>
           </Route>
           <Route exact path="/health">
-          <News key = 'health' pageSize = {10} category = 'health'/>
+          <News key = 'health' pageSize = {this.pageSize} category = 'health'/>
           </Route>
           <Route exact path="/entertainment">
-          <News key = 'entertainment' pageSize = {10} category = 'entertainment'/>
+          <News key = 'entertainment' pageSize = {this.pageSize} category = 'entertainment'/>
           </Route>
           {/* <Route exact path="/technology">
-          <News key = 'technology' pageSize = {10} category = 'technology'/>
+          <News key = 'technology' pageSize = {this.pageSize} category = 'technology'/>
           </Route> */}
         </Switch>
       </div>

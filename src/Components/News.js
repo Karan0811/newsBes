@@ -66,6 +66,9 @@ handleNextClick = async ()=>{
                 description={element.description}
                 newsUrl={element.url}
                 imageUrl={element.urlToImage}
+                author = {element.author}
+                publishedAt = {element.publishedAt}
+                source = {element.source.name}
               />
             </div>
           ))}
